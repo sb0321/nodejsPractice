@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메모</title>
+</head>
+<body>
+    <h1>나의 메모</h1>
+    <hr>
+    <form action="/process/upload" method="POST">
+        <p><label>작성자</label></p>
+        <input type="text" name="username">
+        <br>
+        <p><label>작성일시</label></p>
+        <input type="date" name="date">
+        <br><br>
+        <p><label>내용</label></p>
+        <input type="textarea" name="text">
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

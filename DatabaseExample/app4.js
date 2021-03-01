@@ -266,9 +266,8 @@ router.route('/process/adduser').post(function(req, res) {
                 throw err;
             }
 
-
             // 결과 객체 확인하여 추가된 데이터 있으면 성공 응답 전송
-            if(result && result.insertedCount > 0) {
+            if(result) {
                 console.dir(result);
 
                 res.writeHead(200, {'Content-Type':'text/html;charset=utf8'});
